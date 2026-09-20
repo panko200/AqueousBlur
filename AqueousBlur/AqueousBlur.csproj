@@ -12,10 +12,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenCvSharp4" Version="4.6.0.20220608" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="YukkuriMovieMaker.Controls">
       <HintPath>$(YMM4DirPath)YukkuriMovieMaker.Controls.dll</HintPath>
     </Reference>
@@ -36,6 +32,9 @@
     </Reference>
     <Reference Include="Vortice.Mathematics">
       <HintPath>$(YMM4DirPath)Vortice.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp">
+      <HintPath>$(YMM4DirPath)OpenCvSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <!--ビルド後にYMM4のプラグインフォルダにdllをコピーする-->

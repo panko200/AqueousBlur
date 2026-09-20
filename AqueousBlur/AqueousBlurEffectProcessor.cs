@@ -498,7 +498,7 @@ namespace AqueousBlur
             var map = readableBitmap.Map(MapOptions.Read);
             try
             {
-                using var tempMat = new Mat(readableBitmap.PixelSize.Height, readableBitmap.PixelSize.Width, MatType.CV_8UC4, map.Bits, map.Pitch);
+                using var tempMat = Mat.FromPixelData(readableBitmap.PixelSize.Height, readableBitmap.PixelSize.Width, MatType.CV_8UC4, map.Bits, map.Pitch);
                 return tempMat.Clone();
             }
             finally
